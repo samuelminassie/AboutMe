@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.header {    
+    /* background-color: rgb(0, 140, 255); */
+    display: flex;
+    align-items: center;
+    padding-left: .25em;        
+}
+.header h1 {
+    justify-content: left;
+    display: flex;
+    font-size: 1.25em;   
+}
+
+main {
+    padding: 2em;
+}
+
+.header-nav {
+    display: flex;    
+    justify-content: flex-end;    
+    margin-left: auto;
+}
+
+.header-nav ul {
+    display: flex;    
+    padding: 0;
+    gap: 0px;
+    /* color: whitesmoke; */
+    justify-content: flex-end;
+    padding: 1em;    
+    
+}
+
+.header-nav li {    
+    margin-right: 0px;    
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding: .5em;    
+    
+}
+.hero {
+    display: flex;
+    margin-top: 3em;
+    
+}
+
+.hero h1 {
+    font-size: 2em;    
+    margin-bottom: .75em;
+}
+
+.hero img {
+    width: 300px;
+    justify-content: flex-start;
+}
+
+.hero-text {
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(54, 98, 227);
+    color: whitesmoke;
+    padding: 1em     
+}
+
+.about-me div {
+    align-content: center;
+}
+.about-me-text {
+    /* background-color: whitesmoke; */
+    justify-content: flex-start;
+    margin: .5em .5em;   
+}
+.about-me-text p {
+    margin-top: .5em;
+}
+
+.about-me h1 {
+    font-size: 2em;    
+    margin-bottom: .75em;
+    flex: 1 1 150px; 
+}
+
+.about-me img {    
+    width: 200px;
+    border: solid whitesmoke;
+    border-radius: 100px;
+    justify-content: flex-end;
+    align-content: center;
+    margin-right: .5em;
+    padding: .05%;   
+}
+
+.skills {    
+    display: grid;
+    place-items: center;
+    justify-content: center;    
+}
+
+.skills h1 {
+    font-size: 2em;
+    justify-content: center;
+    margin: 1em;
+    text-align: center;
+}
+.icard-container {
+  display: flex;          /* Makes children align in a row */
+  gap: 1em;              /* Space between cards */
+}
+
+.icard {
+  width: 20rem;
+  height: 18rem;
+  padding: 10px;
+  background: rgb(54, 98, 227);
+  border-radius: 30px;
+  color: whitesmoke;
+  flex: 1 1 150px;
+  text-align: center;
+}
+
+.icard-title {
+    padding-bottom: .25em;
+    padding-left: 1em;
+    font-size: clamp(1em, 3vw, 1.5em)
+}
+
+.icard-text {
+    /* padding-top: 2em; */
+    padding-left: 1em;
+    align-content: center;
+    flex-wrap: wrap;    
+    }
+
+.icard-text li {
+    font-size: clamp(.75em, 2.5vw, 1.15em);
+    padding: .15em .15em;
+    flex-wrap: wrap;   
+    text-align: left;
+}
+
+.projects {
+    display: flex;
+    margin-top: 2em;    
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.projects h1 {    
+    text-align: center;
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+.project-row {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-container {         
+    width: 45%;    
+}
+
+.card-title {
+    padding-bottom: 0.5em;
+    font-size: 1.25em;
+}
+
+.card-subtitle {
+    padding-bottom: 1em;
+    font-size: 1.05em;
+}
+
+.contact {
+    display: flex;
+    margin-top: 2em;
+    justify-content: right;
+    flex-direction: column;
+    
+}
+
+.contact h1 {    
+    margin-top: .75em;
+    margin-bottom: .5em;
+    font-size: 1.5em; 
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+.name {
+    flex: 1;
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
