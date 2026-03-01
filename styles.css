@@ -14,7 +14,8 @@
 .header h1 {
     justify-content: left;
     display: flex;
-    font-size: 1.25em;   
+    font-size: 1.75em;
+    padding-left: .5em;   
 }
 
 main {
@@ -42,12 +43,23 @@ main {
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-end;
-    padding: .5em;    
-    
+    padding: .5em;  
+}
+
+.header-nav-link {
+    text-decoration: none;
+    font-weight: bold;    
+}
+
+.header-nav-link:hover {
+    /* background-color: dodgerblue; */
+    color: rgb(194, 132, 91);
+    text-decoration: underline;
 }
 .hero {
     display: flex;
     margin-top: 3em;
+    margin-bottom: 1em;
     
 }
 
@@ -161,7 +173,7 @@ main {
 .projects h1 {    
     text-align: center;
     margin: 1em;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .project-row {
@@ -172,6 +184,8 @@ main {
 }
 
 .card-container {         
+    display: inline-flex;
+    gap: 3em;
     width: 45%;    
 }
 
@@ -185,36 +199,74 @@ main {
     font-size: 1.05em;
 }
 
-.contact {
-    display: flex;
-    margin-top: 2em;
-    justify-content: right;
-    flex-direction: column;
-    
-}
-
-.contact h1 {    
-    margin-top: .75em;
-    margin-bottom: .5em;
-    font-size: 1.5em; 
+.card-text li {
+    padding: .5em .5em;
 }
 
 .footer {
     display: flex;
     align-items: center;
     margin-top: 2em;
+    margin-bottom: .5em;
 }
 
-.left,
-.right {
+.left {
     flex: 1;
+    display: flex;
+    padding-left: 1.5%;
+    gap: 10px;    
 }
 
-.name {
-    flex: 1;
-    text-align: center;
+.left img {    
+    width: 30px;
+    height: auto;    
 }
 
 .right {
-    text-align: right;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 1.5%;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /*items stack on small screens*/
+        align-items: center;
+        text-align: center;
+    }
+
+    .left, .right {
+        justify-content: center;
+        flex: none;
+    }
+
+    .left {
+        gap: 15px; /* slightly bigger gap on mobile */
+        margin-bottom: 0.5em;
+    }
+
+    .right h6 {
+        font-size: 0.9rem;
+    }
+
+    .hero img {
+        width: clamp(150px, 25vw, 300px);
+        height: auto;
+    }
+    .about-me img {
+        width: clamp(120px, 20vw, 200px);
+        height: auto;
+    }
+
+    .icard-container {
+        flex-wrap: wrap; /*cards wrap on smaller screens */
+        justify-content: center;
+    }
+
+    .icard {
+        flex: 1 1 250px; /* min width for cards */
+        max-width: 300px;
+        margin-bottom: 1em;
+    }
 }
